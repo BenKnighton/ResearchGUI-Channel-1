@@ -1,0 +1,64 @@
+{
+    "General Settings": [
+        {
+            "Name": "Merlin",
+            "Full_name": "Mind Emulating Replication Logic Incorporating Neural-networks",
+            "Personality (MBTI)": "INTJ",
+            "User": "Your full name here",
+            "Forname": "First name here",
+            "Surname": "Second name here",
+            "Device": "cpu",
+            "GPU_Booster_Device": "mps",
+            "Desk": "Work_station",
+            "Mode":"Project Assistance",
+            "attention_always_on":true,
+            "attention_length":140,
+            "Male_reference": "Sir",
+            "Female_reference": "Miss",
+            "AudioSpeaker_1": "Jabra SPEAK 510 USB, Core Audio (1 in, 0 out)",
+            "AudioSpeaker_2": "Jabra SPEAK 510 USB",
+            "Default_device": "MacBook Pro Speakers",
+            "voices": "20, 32, 43",
+            "humor": "0.6"
+        }
+    ],
+    
+    "Synthisis Parameters": [
+        {
+            "speaker_id": 43,
+            "preemphasis": 0.97,
+            "min_level_db": -100,
+            "ref_level_db": 30,
+            "_power": 1.4,
+            "fft_size": 1024,
+            "hop_size": 256,
+            "fs": 22050
+        }
+    
+    ],
+    
+    "VAD Parameters": [
+        {
+            "rate": 16000,
+            "chunkDuration":30,
+            "verification_threshold":0.68,
+            "db_threshold":33,
+            "verification_threshold_regression":0.60,
+            "testing_speaker_verification":true,
+            "uses 0.55 for quiet, 0.67 for loud (speakers) (interupts), and db threshold 40/50 for loud and 30 for quiet":"0.67, 40 or 0.55, 30"
+        }
+    
+    ],
+    
+    "Neural Network Models": [
+        {
+            "GPT-3": "microsoft/DialoGPT-medium",
+            "Bert_sentiment": "distilbert-base-uncased-finetuned-sst-2-english",
+            "Transformer_tweet_sentiment": "finiteautomata/bertweet-base-sentiment-analysis",
+            "DeepVoice3": "Test-2.pth",
+            "DeepVoice3 checkpoint": "20171222_deepvoice3_vctk108_checkpoint_step000300000.pth",
+            "Sarcasm": "Sarcasm_model.pth",
+            "OpenAI":"your api key here"
+        }
+    ]
+}
